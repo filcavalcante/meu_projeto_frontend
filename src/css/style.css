@@ -824,7 +824,7 @@ a {
 
 /* Responsive Style */
 @media (max-width: 991px) {
-
+	
 	.banner {
 		border-top: none;
 		margin-top: 0px;
@@ -881,6 +881,10 @@ a {
 
 @media (max-width: 767px) {
 
+	body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
 	.subscribe-form .main-content form input.button {
 		margin-top: 20px;
 	}
@@ -903,7 +907,36 @@ a {
         height: 25px;
         line-height: 25px;
     }
-
+	.navbar .navbar-nav {
+        display: none;
+    }
+    .navbar .navbar-toggler {
+        display: block;
+    }
+    .navbar .navbar-toggler:focus {
+        outline: none;
+    }
+    .navbar .navbar-collapse {
+        display: none;
+    }
+    .navbar .navbar-toggler-icon {
+        cursor: pointer;
+    }
+    .navbar .show {
+        display: block;
+    }
+    .navbar .navbar-nav.mobile {
+        display: block;
+    }
+    .navbar .navbar-nav.mobile .nav-item {
+        text-align: center;
+        padding: 10px 0;
+    }
+	.subscribe-form .main-content form input[type="email"],
+    .subscribe-form .main-content form button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 ::placeholder {

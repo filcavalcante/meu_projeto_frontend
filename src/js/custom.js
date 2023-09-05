@@ -345,4 +345,14 @@ $(document).ready(function(){
         }
     });
 
+    $('body').on('click', '#btn-contato', function(event) {
+        event.preventDefault();
+        alert('Não disponível!');
+    })
+
+    $('body').on('click', '#btnCadastrar', function(event) {
+        event.preventDefault();
+        alert('Não disponível!');
+    })
+
 });
